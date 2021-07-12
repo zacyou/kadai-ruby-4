@@ -48,29 +48,29 @@
             <h2 class="mt-4 pb-4 border-bottom">送信内容</h2>
             <tr>
              <td>会社名</td>
-             <td class="text-center"><%= company %></td>
+             <td align="left"><%= company %></td>
             </tr>
             <tr>
              <td>氏名</td>
-             <td class="text-center"><%= name %></td>
+             <td align="left"><%= name %></td>
             </tr>
             <tr>
              <td>メール</td>
-             <td class="text-center"><%= mail %></td>
+             <td align="left"><%= mail %></td>
              </tr>
             <tr>
               <td>電話番号</td>
-              <td class="text-center"><%= tel %></td>
+              <td align="left"><%= tel %></td>
             </tr>
             <tr>
               <td>内容</td>
-              <td class="text-center"><%= content %></td>
+              <td align="left"><%= content.gsub(/\r\n|\r|\n/, "<br>") %></td>
               </tr>
         </table>
     </div>
         <div class="text-center mb-4">
             <!-- 「戻る」ボタンを緑色にする設定を追加 -->
-            <a href="contact.html" class="btn btn-success">戻る</a>
+            <a href="/" class="btn btn-success">戻る</a>
         </div>
     </div>
     <footer class="text-center pt-3 border-top">
