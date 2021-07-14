@@ -48,23 +48,23 @@
         <table class="mt-4 table">
             <tr>
              <td>会社名</td>
-             <td align="left"><%=company%></td>
+             <td class="text-left"><%= company %></td>
             </tr>
             <tr>
              <td>氏名</td>
-             <td align="left"><%= name %></td>
-            </tr>
+             <td class="text-left"><%= name %></td>
+             </tr>
             <tr>
              <td>メール</td>
-             <td align="left"><%= mail %></td>
+             <td class="text-left"><%= mail %></td>
              </tr>
             <tr>
               <td>電話番号</td>
-              <td align="left"><%= tel %></td>
+              <td class="text-left"><%= tel %></td>
             </tr>
             <tr>
               <td>内容</td>
-              <td align="left"><%= content.gsub(/\r\n|\r|\n/, "<br>") %></td>
+              <td class="text-left"><%= content.gsub(/\r\n|\r|\n/, "<br>") %></td>
               </tr>
         </table>
     </div>
